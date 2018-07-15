@@ -2,7 +2,7 @@
 
 How to run in AEM 6.4
 
-## Login using We.Retail
+## Setup
 
 ###  1. After building, install the bundle using the Web Console (there’s no package)
 
@@ -48,11 +48,14 @@ How to run in AEM 6.4
 * Go to Maven Dependencies > org.apache.sling.auth.core.impl.SlingAuthenticator and set a breakpoint in the handleSecurity( ) method.
 ** Note: alternatively set a breakpoint in the org.apache.sling.auth.form.impl.FormAuthenticationHandler extractCredentials( ) method.
 
-### 4. Use We.Retail signin page to login
+## Login
+
+### 1. Use We.Retail signin page to login
 ```
 http://localhost:4503/content/we-retail/us/en/community/signin.html 
 ```
 
+* Login as one of the We.Retail users.
 * Step through the debugger to anaylize execution flow.
 
 
