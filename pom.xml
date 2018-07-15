@@ -210,10 +210,61 @@
 	
 
 <!-- Added by pdmyrs for sling debugging -->
+
+
+<!--  ////////////////////////////////////////    -->
+<!--  Added by pdmyrs                             -->
+<!--  For debugging the Sling                     -->
+<!--                                              -->
+<!--  Note: contains the Sling org.apache.sling.spi.resource.provider.ResourceProvider Interface -->
+<!--  ////////////////////////////////////////    -->
+
+<!--  AEM 6.4 Bundle Information -->
+
+<!-- Apache Sling API  -->
+<!-- Symbolic Name	org.apache.sling.api -->
+<!-- Version	2.16.4 -->
+<!-- Bundle Location	launchpad:resources/install/12/org.apache.sling.api-2.16.4.jar -->
+<!-- Last Modification	Tue Jul 10 14:03:06 EDT 2018 -->
+<!-- Bundle Documentation	http://sling.apache.org/site/sling-api.html -->
+<!-- Vendor	The Apache Software Foundation -->
+<!-- Description	The Apache Sling API defines an extension to the Servlet API 2.4 to provide access to content and unified access to request parameters hiding the differences between the different methods of transferring parameters from client to server. Note that the Apache Sling API bundle does not include the Servlet API but instead requires the API to be provided by the Servlet container in which the Apache Sling framework is running or by another bundle. -->
+<!-- Start Level	12 -->
+<!-- Exported Packages	org.apache.sling.api,version=2.3.2 -->
+<!-- org.apache.sling.api.adapter,version=2.2.2 -->
+<!-- org.apache.sling.api.auth,version=1.0.2 -->
+<!-- org.apache.sling.api.request,version=2.4.2 -->
+<!-- org.apache.sling.api.resource,version=2.10.1 -->
+<!-- org.apache.sling.api.resource.external,version=1.0.0 -->
+<!-- org.apache.sling.api.resource.observation,version=1.2.0 -->
+<!-- org.apache.sling.api.resource.path,version=1.2.0 -->
+<!-- org.apache.sling.api.resource.runtime,version=1.0.1 -->
+<!-- org.apache.sling.api.resource.runtime.dto,version=1.0.0 -->
+<!-- org.apache.sling.api.scripting,version=2.3.1 -->
+<!-- org.apache.sling.api.security,version=1.0.2 -->
+<!-- org.apache.sling.api.servlets,version=2.2.0 -->
+<!-- org.apache.sling.api.wrappers,version=2.6.1 -->
+<!-- org.apache.sling.spi.resource.provider,version=1.1.0 -->
+	<dependency> 
+		<artifactId>org.apache.sling.api</artifactId>
+		<version>2.16.4</version>
+		<groupId>org.apache.sling</groupId>
+		<scope>provided</scope> 
+	</dependency>
+
+
+
+
+
+
+
+
+
+
     	<dependency>
-    		<groupId>org.apache.sling</groupId>
     		<artifactId>org.apache.sling.engine</artifactId>
     		<version>2.6.12</version>
+    		<groupId>org.apache.sling</groupId>
     		<scope>provided</scope>
     	</dependency>
 
@@ -224,6 +275,25 @@
 <!-- 	<version>2.16.4</version> -->
 <!-- 	<scope>provided</scope> -->
 <!-- </dependency>       -->
+
+
+<!--  ////////////////////////////////////////    -->
+<!--  Added by pdmyrs                             -->
+<!--  For debugging the Sling Resource Resolver   -->
+<!--                                              -->
+<!--  ////////////////////////////////////////    -->
+
+<!--  AEM 6.4 Bundle Information -->
+<!-- Apache Sling Resource Resolverorg.apache.sling.resourceresolver -->
+<!-- Symbolic Name	org.apache.sling.resourceresolver -->
+<!-- Version	1.5.34 -->
+<!-- Bundle Location	launchpad:resources/install/19/org.apache.sling.resourceresolver-1.5.34.jar -->
+<!-- Last Modification	Tue Jul 10 14:03:06 EDT 2018 -->
+<!-- Bundle Documentation	http://sling.apache.org -->
+<!-- Vendor	The Apache Software Foundation -->
+<!-- Description	This bundle provides the Resource Resolver and the Resource Resolver Factory. -->
+<!-- Start Level	19 -->
+<!-- Exported Packages	--- -->
 <dependency>
     <groupId>org.apache.sling</groupId>
     <artifactId>org.apache.sling.resourceresolver</artifactId>
@@ -231,9 +301,31 @@
 	<scope>provided</scope>
 </dependency>
 		
-		
-		
-		
+
+<!--  ////////////////////////////////////////    -->
+<!--  Added by pdmyrs                             -->
+<!--  For debugging the Sling JCR                 -->
+<!--      Resource Provider                       -->
+<!--                                              -->
+<!--  ////////////////////////////////////////    -->
+
+<!-- AEM Bundle information -->
+<!-- Apache Sling JCR Resource Resolverorg.apache.sling.jcr.resource -->
+<!-- Symbolic Name	org.apache.sling.jcr.resource -->
+<!-- Version	3.0.8 -->
+<!-- Bundle Location	launchpad:resources/install/19/org.apache.sling.jcr.resource-3.0.8.jar -->
+<!-- Last Modification	Tue Jul 10 14:03:06 EDT 2018 -->
+<!-- Bundle Documentation	http://sling.apache.org -->
+<!-- Vendor	The Apache Software Foundation -->
+<!-- Description	This bundle provides the JCR based ResourceProvider. -->
+<!-- Start Level	19 -->
+<!-- Exported Packages	org.apache.sling.jcr.resource.api,version=1.0.0 -->
+<dependency> 
+	<artifactId>org.apache.sling.jcr.resource</artifactId>
+	<version>3.0.8</version> 
+	<groupId>org.apache.sling</groupId>
+	<scope>provided</scope>
+</dependency>
 		
 	</dependencies>
 </project>
