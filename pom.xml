@@ -200,17 +200,6 @@
 		
 		
 		
-<!-- Added by pdmyrs for sling auth debugging -->
-	<dependency>
-		<artifactId>org.apache.sling.auth.core</artifactId> 
-		<version>1.4.2</version> 
-		<groupId>org.apache.sling</groupId> 
-		<scope>provided</scope> 
-	</dependency>  
-	
-
-<!-- Added by pdmyrs for sling debugging -->
-
 
 <!--  ////////////////////////////////////////    -->
 <!--  Added by pdmyrs                             -->
@@ -220,7 +209,6 @@
 <!--  ////////////////////////////////////////    -->
 
 <!--  AEM 6.4 Bundle Information -->
-
 <!-- Apache Sling API  -->
 <!-- Symbolic Name	org.apache.sling.api -->
 <!-- Version	2.16.4 -->
@@ -253,14 +241,26 @@
 	</dependency>
 
 
+<!--  ////////////////////////////////////////    -->
+<!--  Added by pdmyrs                             -->
+<!--  For debugging the Sling                     -->
+<!--                                              -->
+<!--  ////////////////////////////////////////    -->
 
 
-
-
-
-
-
-
+<!--  AEM 6.4 Bundle Information -->
+<!-- Apache Sling Engine Implementation -->
+<!-- Symbolic Name	org.apache.sling.engine -->
+<!-- Version	2.6.12 -->
+<!-- Bundle Location	launchpad:resources/install/0/org.apache.sling.engine-2.6.12.jar -->
+<!-- Last Modification	Tue Jul 10 14:03:08 EDT 2018 -->
+<!-- Bundle Documentation	http://sling.apache.org -->
+<!-- Vendor	The Apache Software Foundation -->
+<!-- Description	Bundle implementing the core of Apache Sling. -->
+<!-- Start Level	20 -->
+<!-- Exported Packages	org.apache.sling.engine,version=2.2.1 -->
+<!-- org.apache.sling.engine.jmx,version=1.1.1 -->
+<!-- org.apache.sling.engine.servlets,version=2.0.9 -->
     	<dependency>
     		<artifactId>org.apache.sling.engine</artifactId>
     		<version>2.6.12</version>
@@ -268,23 +268,48 @@
     		<scope>provided</scope>
     	</dependency>
 
-<!-- Added by pdmyrs for sling resource debugging -->
-<!-- <dependency>  -->
-<!-- 	<groupId>org.apache.sling</groupId> -->
-<!-- 	<artifactId>org.apache.sling.api</artifactId> -->
-<!-- 	<version>2.16.4</version> -->
-<!-- 	<scope>provided</scope> -->
-<!-- </dependency>       -->
+
 
 
 <!--  ////////////////////////////////////////    -->
 <!--  Added by pdmyrs                             -->
-<!--  For debugging the Sling Resource Resolver   -->
+<!--  For debugging                               -->
+<!--       Sling Authentication                   -->
+<!--                                              -->
+<!--  ////////////////////////////////////////    -->
+<!--  AEM 6.4 Bundle Information -->		
+<!-- Apache Sling Authentication Service -->
+<!-- Symbolic Name	org.apache.sling.auth.core -->
+<!-- Version	1.4.2 -->
+<!-- Bundle Location	launchpad:resources/install/19/org.apache.sling.auth.core-1.4.2.jar -->
+<!-- Last Modification	Tue Jul 10 14:03:06 EDT 2018 -->
+<!-- Bundle Documentation	http://sling.apache.org/site/authentication.html -->
+<!-- Vendor	The Apache Software Foundation -->
+<!-- Description	The Sling Authentication Service bundle provides the basic mechanisms to authenticate HTTP requests with a JCR repository. The algorithms for extracting authentication details from the requests is extensible by implementing an AuthenticationHandler interface. -->
+<!-- Start Level	19 -->
+<!-- Exported Packages	org.apache.sling.auth.core,version=1.3.2 -->
+<!-- org.apache.sling.auth.core.spi,version=1.2.2 -->
+<!-- org.apache.sling.engine.auth,version=2.0.6		 -->
+	<dependency>
+		<artifactId>org.apache.sling.auth.core</artifactId> 
+		<version>1.4.2</version> 
+		<groupId>org.apache.sling</groupId> 
+		<scope>provided</scope> 
+	</dependency>  
+	
+
+
+
+<!--  ////////////////////////////////////////    -->
+<!--  Added by pdmyrs                             -->
+<!--  For debugging the                           -->
+<!--      Sling Resource Resolver                 -->
+<!--      Sling Resource Resolver Factory         -->
 <!--                                              -->
 <!--  ////////////////////////////////////////    -->
 
 <!--  AEM 6.4 Bundle Information -->
-<!-- Apache Sling Resource Resolverorg.apache.sling.resourceresolver -->
+<!-- Apache Sling Resource Resolver  -->
 <!-- Symbolic Name	org.apache.sling.resourceresolver -->
 <!-- Version	1.5.34 -->
 <!-- Bundle Location	launchpad:resources/install/19/org.apache.sling.resourceresolver-1.5.34.jar -->
@@ -293,7 +318,7 @@
 <!-- Vendor	The Apache Software Foundation -->
 <!-- Description	This bundle provides the Resource Resolver and the Resource Resolver Factory. -->
 <!-- Start Level	19 -->
-<!-- Exported Packages	--- -->
+<!-- Exported Packages	-->
 <dependency>
     <groupId>org.apache.sling</groupId>
     <artifactId>org.apache.sling.resourceresolver</artifactId>
@@ -304,8 +329,8 @@
 
 <!--  ////////////////////////////////////////    -->
 <!--  Added by pdmyrs                             -->
-<!--  For debugging the Sling JCR                 -->
-<!--      Resource Provider                       -->
+<!--  For debugging the                           -->
+<!--     Sling JCR Resource Provider              -->
 <!--                                              -->
 <!--  ////////////////////////////////////////    -->
 
